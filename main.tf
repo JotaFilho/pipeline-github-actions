@@ -51,7 +51,7 @@ data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
     bucket = "josefilho-remote-state"
-    key    = "pipeline-azure-devops/terraform.tfstate"
+    key    = "aws-vpc/terraform.tfstate"
     region = "sa-east-1"
   }
 }
