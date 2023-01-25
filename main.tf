@@ -7,11 +7,12 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "2.94.0"
     }
-  }
+
     aws = {
       source = "hashicorp/aws"
-      version = "4.51.0"
+      version = "3.73.0"
     }
+  }
 
   backend "azurerm" {
     resource_group_name  = "remote-state"
